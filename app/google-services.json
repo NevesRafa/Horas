@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "526377140698",
+    "project_id": "work-days-and-times",
+    "storage_bucket": "work-days-and-times.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526377140698:android:20c98524e7c8a3ff0c00e3",
+        "android_client_info": {
+          "package_name": "com.nevesrafael.horas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526377140698-dtnli0jgp6n7jvrkik4crj5660kvo0vk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNJxQUeEU5uiTWIY3V5uEUBVmgpiNYwic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526377140698-dtnli0jgp6n7jvrkik4crj5660kvo0vk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

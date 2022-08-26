@@ -9,8 +9,8 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class Workday(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
-    val projectName: String,
-    val comments: String,
-    val date: String,
-    val hours: String,
+    var projectName: String?,
+    var comments: String?,
+    var date: String?,
+    var hours: String?,
 ) : Parcelable

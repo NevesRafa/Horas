@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Horas</string>
     <string name="login">Login</string>
+    <string name="remove">Remove</string>
+    <string name="edit">Edit</string>
+    <string name="hours">Hours</string>
+    <string name="date">Date</string>
+    <string name="comments">Comments</string>
+    <string name="project_name">Project name</string>
+    <string name="save">Save</string>
 </resources>

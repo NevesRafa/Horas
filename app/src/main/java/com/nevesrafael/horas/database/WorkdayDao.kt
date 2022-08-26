@@ -7,17 +7,20 @@ import com.nevesrafael.horas.model.Workday
 interface WorkdayDao {
 
     @Query("SELECT * FROM Workday")
-    fun buscaTodos(): List<Workday>
+    fun searchAll(): List<Workday>
 
     @Insert
-    fun salvar(evento: Workday)
+    fun save(evento: Workday)
 
     @Delete
     fun remove(evento: Workday)
 
     @Update
-    fun altera(evento: Workday)
+    fun update(evento: Workday)
 
     @Query("SELECT * FROM Workday WHERE id = :id")
-    fun buscaPorId(id: Int): Workday?
+    fun searchId(id: Int): Workday
+
+//    @Query("SELECT * FROM Workday WHERE date LIKE % :date")
+//    fun searchDate(date: String): Workday
 }

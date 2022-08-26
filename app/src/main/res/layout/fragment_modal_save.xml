@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
-        android:hint="Project name"
+        android:hint="@string/project_name"
         app:layout_constraintBottom_toTopOf="@id/comments_text_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginBottom="16dp"
-        android:hint="Comments"
+        android:hint="@string/comments"
         app:layout_constraintBottom_toTopOf="@id/project_name_text_input"
         app:layout_constraintEnd_toEndOf="@id/project_name_text_input"
         app:layout_constraintStart_toStartOf="@id/project_name_text_input"
@@ -41,7 +41,7 @@
         app:startIconDrawable="@drawable/ic_edit">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/descricao"
+            android:id="@+id/comments"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -56,15 +56,15 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="8dp"
-        android:hint="Date"
-        app:layout_constraintBottom_toBottomOf="@id/horario_text_input"
-        app:layout_constraintEnd_toStartOf="@id/horario_text_input"
+        android:hint="@string/date"
+        app:layout_constraintBottom_toBottomOf="@id/hours_text_input"
+        app:layout_constraintEnd_toStartOf="@id/hours_text_input"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/comments_text_input"
         app:startIconDrawable="@drawable/ic_calendar">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/data"
+            android:id="@+id/date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:clickable="true"
@@ -75,42 +75,39 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/horario_text_input"
+        android:id="@+id/hours_text_input"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:hint="Hours"
-        app:layout_constraintBottom_toTopOf="@id/botao_salvar"
+        android:hint="@string/hours"
+        app:layout_constraintBottom_toTopOf="@id/save_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/date_text_input"
         app:layout_constraintTop_toBottomOf="@id/comments_text_input"
         app:startIconDrawable="@drawable/ic_watch">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/horario"
+            android:id="@+id/hours"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:clickable="true"
-            android:focusable="false"
-            android:focusableInTouchMode="false"
-            android:inputType="none" />
+            android:inputType="number" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-        android:id="@+id/botao_salvar"
+        android:id="@+id/save_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:text="Save"
+        android:text="@string/save"
         app:icon="@drawable/ic_save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
